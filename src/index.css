@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+body {
+  @apply bg-background text-text;
+}
+
+@layer utilities {
+  .bg-background {
+    background-color: theme('colors.background');
+  }
+  .text-text {
+    color: theme('colors.text');
+  }
+  .text-textSecondary {
+    color: theme('colors.textSecondary');
+  }
+  .bg-surface {
+    background-color: theme('colors.surface');
+  }
+  .border-border {
+    border-color: theme('colors.border');
+  }
+}
